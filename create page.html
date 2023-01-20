@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <h1>Add a new Tourist Place</h1>
+            <div class="hidden">
+                <input type="text" value="-1">
+            </div>
+            <div class="item">
+                <label for="name">Name:</label>
+                <input type="text">
+            </div>
+            <div class="item">
+                <label for="address">Address:</label>
+                <input type="text">
+            </div>
+            <div class="item">
+                <label for="rating">Rating:</label>
+                <input type="number" max="5" min="1" placeholder="1">
+                <div class="side red-text" ><span>Range 1 to 5</span></div>
+            </div>
+            <div class="item relative">
+                <label for="type">Type:</label>
+                <input type="text">
+                <div class="side">
+                    <span>Beach</span><br>
+                    <span>Hills</span><br>
+                    <span>Fountain</span><br>
+                    <span>Lndmark</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <label for="picture">Picture:</label>
+                <input type="file" class="red-outline">
+            </div>
+
+            <div class="item btns">
+                <button class="green">Submit</button>
+                <button class="yellow" id="reset">Reset</button>
+
+            </div>
+            <div class="item btns">
+                <a href="list page.html">Back to Tourist Place List</a>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
